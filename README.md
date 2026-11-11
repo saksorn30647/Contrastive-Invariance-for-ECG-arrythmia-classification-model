@@ -53,7 +53,7 @@ per-seed, all protocols) and [`results/reports/model_comparison.md`](results/rep
 
 Python **3.10.20**. On the original machine the interpreter is *not* on PATH:
 
-```
+```text
 C:\Users\sakso\Anaconda3\envs\ecg_env\python.exe
 ```
 
@@ -104,11 +104,11 @@ code/
   invariance_training.py      models a and c          (inter-patient)
   pretrained_training.py      models b and d          (inter-patient)
   dual_protocol_training.py   random 8:2 and 5-fold CV protocols
-  reverse_direction_training.py  INCART -> MIT-BIH
+  reverse_direction_training.py  INCART → MIT-BIH
   contrastive_pretrain.py     NT-Xent encoder pretraining
   <26 analysis scripts>       statistics, tables, figures
 scripts/                      PowerShell runners (thermal gate, stall watchdog, sleep guard)
-runs/<tag>/metrics.json       109 completed runs -- full config + per-epoch history + metrics
+runs/<tag>/metrics.json       109 completed runs — full config + per-epoch history + metrics
 runs/_analysis/               result tables (.csv/.json)
 results/figures/              15 figures
 results/reports/              three write-ups
@@ -178,6 +178,3 @@ the run's split, fold, split-seed and fold count.
   be measurable at this variance.
 - **Fold-wise standard deviations measure partition variance only** (the training seed is fixed
   at 42) and must not be quoted beside the seed-wise ones.
-#   C o n t r a s t i v e - I n v a r i a n c e - L e a r n i n g - f o r - E C G - A r r h y t h m i a - C l a s s i f i c a t i o n 
- 
- 
